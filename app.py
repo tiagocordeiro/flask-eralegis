@@ -1,6 +1,7 @@
 from flask import Flask
 from eralegis import thelemicdate
 
+
 def create_app():
     application = Flask(__name__)
 
