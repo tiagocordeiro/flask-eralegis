@@ -1,1 +1,1 @@
-web: gunicorn app:flaskeralegis.app —log-file=-
+web: flask run
