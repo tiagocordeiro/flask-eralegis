@@ -1,1 +1,1 @@
-web: gunicorn flaskeralegis.app:application
+web: gunicorn app:flaskeralegis.app —log-file=-
