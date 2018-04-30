@@ -1,1 +1,1 @@
-web: uwsgi --http 127.0.0.1 --module app
+web: gunicorn app.wsgi --log-file -
