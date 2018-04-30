@@ -1,1 +1,1 @@
-web: flask run
+web: uwsgi --http 127.0.0.1 --module app
