@@ -1,1 +1,1 @@
-web: gunicorn flaskeralegis.app:app
+web: gunicorn flaskeralegis.app:application
