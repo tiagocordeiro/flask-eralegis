@@ -1,2 +1,1 @@
-web: gunicorn app:application
-release: FLASK_APP=app.py
+web: gunicorn flaskeralegis.app:app
