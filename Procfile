@@ -1,1 +1,1 @@
-web: gunicorn eralegis:app
+web: flask run
