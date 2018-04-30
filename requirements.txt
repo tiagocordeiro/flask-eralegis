@@ -2,6 +2,7 @@ click==6.7
 eralegis==0.0.5
 Flask==1.0.1
 flatlib==0.2.1
+gunicorn==19.8.0
 itsdangerous==0.24
 Jinja2==2.10
 MarkupSafe==1.0
