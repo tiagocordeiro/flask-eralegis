@@ -1,3 +1,3 @@
-from package.app import create_app
+from flaskeralegis.app import create_app
 
 application = app = create_app()
