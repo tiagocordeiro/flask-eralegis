@@ -6,8 +6,8 @@ def create_app():
     application = Flask(__name__)
 
     @application.route('/')
-    def hello():
-        hoje = thelemicdate.now()
-        return hoje
+    def index():
+        today = thelemicdate.now()
+        return today
 
     return application
