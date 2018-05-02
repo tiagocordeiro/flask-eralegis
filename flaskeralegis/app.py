@@ -25,7 +25,8 @@ def create_app():
 
     @application.route('/liberal/', methods=['GET', 'POST'])
     def liberal_api():
-        response = jsonify(liberal_quote())
+        response = jsonify(capitulo=liberal_quote()[0],
+                           versiculo=liberal_quote()[1])
         response.headers.add("Access-Control-Allow-Origin", '*')
         return response
 
