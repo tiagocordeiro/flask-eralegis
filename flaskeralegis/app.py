@@ -10,8 +10,9 @@ def create_app():
     @application.route('/')
     def index():
         today = thelemicdate.now()
-        random_al_capitulo = liberal_quote()[0]
-        random_al_versiculo = liberal_quote()[1]
+        quote = liberal_quote()
+        random_al_capitulo = quote[0]
+        random_al_versiculo = quote[1]
         return render_template('index.html', datathelemica=today,
                                al_cap=random_al_capitulo,
                                al_ver=random_al_versiculo)
@@ -25,8 +26,9 @@ def create_app():
 
     @application.route('/liberal/', methods=['GET', 'POST'])
     def liberal_api():
-        response = jsonify(capitulo=liberal_quote()[0],
-                           versiculo=liberal_quote()[1])
+        quote = liberal_quote()
+        response = jsonify(capitulo=quote[0],
+                           versiculo=quote[1])
         response.headers.add("Access-Control-Allow-Origin", '*')
         return response
 
