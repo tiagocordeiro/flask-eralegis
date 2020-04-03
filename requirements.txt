@@ -1,6 +1,6 @@
 click==7.0
 eralegis==0.0.9
-Flask==1.1.1
+Flask==1.1.2
 flatlib==0.2.1
 gunicorn==19.9.0
 itsdangerous==1.1.0
