@@ -39,7 +39,6 @@ def create_app():
         capitulo_key = random.choice(list(liberal.keys()))
         capitulo_textos = liberal[capitulo_key].split('\n\n')
         versiculo = random.choice(capitulo_textos)
-        return (capitulo_key, versiculo)
-
+        return capitulo_key, versiculo
 
     return application
